@@ -1,5 +1,5 @@
 //
-//  YLVolumeChangeObserver.h
+//  MIVolumeChangeObserver.h
 //  QiParchisDemo
 //
 //  Created by Qi on 2024/1/23.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLVolumeChangeObserver : NSObject
+@interface MIVolumeChangeObserver : NSObject
 
 + (instancetype)shareInstance;
 - (void)observeVolumeOnBackgroundThread;

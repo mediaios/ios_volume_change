@@ -1,16 +1,16 @@
 //
-//  YLVolumeChangeObserver.m
+//  MIVolumeChangeObserver.m
 //  QiParchisDemo
 //
 //  Created by Qi on 2024/1/23.
 //
 
-#import "YLVolumeChangeObserver.h"
+#import "MIVolumeChangeObserver.h"
 #import <QuartzCore/QuartzCore.h>
 
 
 
-@interface YLVolumeChangeObserver()
+@interface MIVolumeChangeObserver()
 
 @property (nonatomic,assign) CGFloat repeatTimeInterval;
 @property  (nonatomic,assign) BOOL isSystemMute;
@@ -23,10 +23,10 @@
 
 @end
 
-@implementation YLVolumeChangeObserver
+@implementation MIVolumeChangeObserver
 
 
-static YLVolumeChangeObserver *yl_instance = NULL;
+static MIVolumeChangeObserver *mi_instance = NULL;
 
 - (instancetype)init
 {
@@ -41,10 +41,10 @@ static YLVolumeChangeObserver *yl_instance = NULL;
 
 + (instancetype)shareInstance
 {
-    if(yl_instance == NULL){
-        yl_instance = [[YLVolumeChangeObserver alloc] init];
+    if(mi_instance == NULL){
+        mi_instance = [[MIVolumeChangeObserver alloc] init];
     }
-    return yl_instance;
+    return mi_instance;
 }
 
 
